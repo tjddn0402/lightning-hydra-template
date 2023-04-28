@@ -1,3 +1,11 @@
+program: train.py
+method: bayes
+metric:
+  goal: maximize
+  name: test/acc
+parameters:
+  
+
 # @package _global_
 
 # specify here default configuration
