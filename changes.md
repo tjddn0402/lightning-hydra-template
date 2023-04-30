@@ -25,15 +25,20 @@ find . -type f -exec sed -i 's/lightning.pytorch/pytorch_lightning/g' {} +
 ```
 
 # how to run
+0. 이 repo clone 하고 install
+```bash
+git clone https://github.com/tjddn0402/lightning-hydra-template.git
+pip install -e .
+```
 1. train
 ```bash
 python train.py
 ```
-2. `eval.yaml` 수정
+1. `eval.yaml` 수정
 ```bash
 ckpt_path: /path/to/checkpoint.ckpt
 ```
-3. eval
+1. eval
 ```bash
 python eval.py
 ```
